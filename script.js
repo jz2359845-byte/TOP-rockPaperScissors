@@ -1,3 +1,6 @@
+<<<<<<<<< Temporary merge branch 1
+console.log("This is working!")
+=========
 //Human Logic
 function getHumanChoice(){
     return (
@@ -76,4 +79,4 @@ function playGame(){
 }
     
 playGame()
-
+>>>>>>>>> Temporary merge branch 2
