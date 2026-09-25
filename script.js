@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Human Logic
 function getHumanChoice(){
     return (
@@ -76,3 +77,6 @@ function playGame(){
 }
     
 playGame()
+=======
+console.log("This is working!")
+>>>>>>> f238eca27db6a2dabc0616fb0c2525c9c2d45297
