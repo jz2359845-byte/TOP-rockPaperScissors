@@ -1,10 +1,8 @@
 //Human Logic
 function getHumanChoice(){
-    return (
-        us_input = prompt("Write an option: Rock,Paper or Scissors"),
-        console.log(us_input)
-        )
+    return (us_input = prompt("Write an option: rock || paper || scissors"))
 }
+
 
 // Computer Logic
 function getComputerChoice(max){
@@ -17,11 +15,8 @@ function getComputerChoice(max){
     }
 }
 
-function playGame(){
 
-//Functions     
-let humanSelection
-let computerSelection 
+function playGame(){
 
 //Scores
 let humanScore= 0;
@@ -45,6 +40,7 @@ let computerScore= 0;
             humanScore ++
             console.log(`Scores: Computer score: ${computerScore} || Human score: ${humanScore}`)
         }
+
 
         //Computer win conditions
         if(computerChoice === "rock" && humanChoice == "scissors"){
@@ -76,9 +72,16 @@ let computerScore= 0;
     }
 
     for (let round=1; round<=5; round++) {        
-        console.log(`Round ${round}:`);
-        playRound(getHumanChoice(), getComputerChoice(3));
+        console.log(`Round ${round}:`); 
+        playRound(getHumanChoice(),getComputerChoice());
     }
+
+    if(humanScore > 5){
+        console.log("The player wins!")
+    }else if (computerScore > 5)(
+        console.log("The computer wins!")
+    )
+
 
 }
     
